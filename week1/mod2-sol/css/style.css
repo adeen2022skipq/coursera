@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(71, 68, 68);
+}
+
+div{
+    background-color: #D3D3D3;
+    border: 3px solid black;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+}
+
+h2{
+    border: 3px solid black;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    margin-top: 0;
+}
+
+#head-1{
+    background-color: #ffc0cb;
+}
+ 
+#head-2{
+    background-color: #a52a2a;
+    color: #ffffff;
+}
+
+#head-3{
+    background-color: #fffacd;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(71, 68, 68);
+    justify-content: space-around;
+    border: none;
+}
+
+/* for desktop layout */
+@media (min-width: 992px){
+  
+    .flex-item-left, .flex-item-mid, .flex-item-right{
+        flex: 33.33%;
+        border: 15px solid rgb(71, 68, 68);
+    }
+    
+}
+
+/* for tablet layout */
+@media (min-width: 768px) and (max-width: 991px){
+   
+    .flex-item-left, .flex-item-mid, .flex-item-right{
+        flex: 50%;
+        border: 15px solid rgb(71, 68, 68);
+    }
+} 
+
+/* for mobile layout */
+@media (max-width: 767px){
+    
+    .flex-item-left, .flex-item-mid, .flex-item-right{
+        flex: 100%;
+        margin: 5%;
+    }
+}
+
